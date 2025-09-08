@@ -1,0 +1,16 @@
+spring:
+ config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to EazyBank cards related prod APIs "
+  contactDetails:
+    name: "André Lucas - product owner"
+    email: "mail@email.com"
+  onCallSupport:
+    - (111) 321-1234
+    - (111) 123-1345

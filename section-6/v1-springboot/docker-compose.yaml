@@ -1,0 +1,40 @@
+services:
+  accounts:
+    image: "andre21funcap/accounts:s6"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - eazyBank
+
+  loans:
+    image: "andre21funcap/loans:s6"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - eazyBank
+
+  cards:
+    image: "andre21funcap/cards:s6"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - eazyBank
+
+networks:
+  eazyBank:
+    driver: bridge

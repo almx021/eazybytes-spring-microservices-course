@@ -1,0 +1,17 @@
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\audit\AuditAwareImpl.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\constants\LoansConstants.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\controller\LoansController.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\dto\ErrorResponseDto.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\dto\LoansContactInfoDto.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\dto\LoansDto.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\dto\ResponseDto.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\entity\BaseEntity.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\entity\Loans.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\exception\GlobalExceptionHandler.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\exception\LoanAlreadyExistsException.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\exception\ResourceNotFoundException.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\LoansApplication.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\mapper\LoansMapper.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\repository\LoansRepository.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\service\ILoansService.java
+C:\Users\Andre\Desktop\microservices\section-7\loans\src\main\java\com\mendes\loans\service\impl\LoansServiceImpl.java
