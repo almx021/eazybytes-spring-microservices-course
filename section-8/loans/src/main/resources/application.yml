@@ -18,8 +18,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  config:
-    import: "configserver:http://localhost:8071/"
+  # config:
+  #   import: "configserver:http://localhost:8071/"
 
 management:
   endpoints:
@@ -40,7 +40,7 @@ eureka:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://localhost:8070/eureka
+      defaultZone: http://eurekaserver:8070/eureka
 
 info:
   app:
