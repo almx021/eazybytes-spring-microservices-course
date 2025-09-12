@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related prod APIs 1"
+  contactDetails:
+    name: "André Lucas - product owner"
+    email: "mail@email.com"
+  onCallSupport:
+    - (111) 321-1234
+    - (111) 123-1345
