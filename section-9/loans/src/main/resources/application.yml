@@ -18,17 +18,25 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  config:
-    import: "configserver:http://localhost:8071/"
+  # config:
+  #   import: "configserver:http://localhost:8071/"
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
   endpoint:
     shutdown:
       access: unrestricted
+    health:
+      probes:
+        enabled: true
   info:
     env:
       enabled: true
