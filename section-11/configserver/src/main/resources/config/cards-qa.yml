@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+cards:
+  message: "Welcome to EazyBank cards related QA APIs "
+  contactDetails:
+    name: "André Lucas - QA"
+    email: "mailQA@email.com"
+  onCallSupport:
+    - (222) 222-1234
+    - (333) 523-3333
