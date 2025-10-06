@@ -1,8 +1,8 @@
 spring:
   application:
     name: "gatewayserver"
-  # config:
-  #   import: "configserver:http://localhost:8071/"
+  config:
+    import: "configserver:http://localhost:8071/"
   cloud:
     gateway:
       server:
@@ -13,7 +13,7 @@ spring:
               lowerCaseServiceId: true
           httpclient:
             connect-timeout: 1000
-            response-timeout: 3s
+            response-timeout: 10s
   data:
     redis:
       connectTimeout: 2s
@@ -32,6 +32,9 @@ management:
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
  
 info:
   app:

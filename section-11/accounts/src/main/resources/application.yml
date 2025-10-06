@@ -18,8 +18,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  # config:
-    # import: "configserver:http://localhost:8071/"
+  config:
+    import: "configserver:http://localhost:8071/"
   cloud:
     openfeign:
       circuitbreaker:
@@ -74,6 +74,9 @@ management:
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 eureka:
   instance:
