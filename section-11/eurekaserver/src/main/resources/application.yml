@@ -2,7 +2,7 @@ spring:
   application:
     name: eurekaserver
   config:
-    import: "configserver:http://localhost:8071/"
+    import: "optional:configserver:http://configserver:8071/"
 
 management:
   endpoints:
@@ -21,3 +21,7 @@ management:
   metrics:
     tags:
       application: ${spring.application.name}
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
