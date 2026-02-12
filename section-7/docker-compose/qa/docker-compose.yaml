@@ -30,7 +30,7 @@ services:
       service: microservice-db-config
 
   configserver:
-    image: "andre21funcap/configserver:s7"
+    image: "karma21/configserver:s7"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -45,7 +45,7 @@ services:
       service: microservice-base-config
 
   accounts:
-    image: "andre21funcap/accounts:s7"
+    image: "karma21/accounts:s7"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -60,7 +60,7 @@ services:
         condition: service_healthy
 
   loans:
-    image: "andre21funcap/loans:s7"
+    image: "karma21/loans:s7"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -75,7 +75,7 @@ services:
         condition: service_healthy
 
   cards:
-    image: "andre21funcap/cards:s7"
+    image: "karma21/cards:s7"
     container_name: cards-ms
     ports:
       - "9000:9000"

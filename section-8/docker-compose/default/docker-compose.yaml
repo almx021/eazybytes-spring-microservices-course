@@ -1,6 +1,6 @@
 services:
   configserver:
-    image: "andre21funcap/configserver:s8"
+    image: "karma21/configserver:s8"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -15,7 +15,7 @@ services:
       service: microservice-base-config
 
   eurekaserver:
-    image: "andre21funcap/eurekaserver:s8"
+    image: "karma21/eurekaserver:s8"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -33,7 +33,7 @@ services:
       service: microservice-configserver-config
 
   accounts:
-    image: "andre21funcap/accounts:s8"
+    image: "karma21/accounts:s8"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -44,7 +44,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "andre21funcap/loans:s8"
+    image: "karma21/loans:s8"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -55,7 +55,7 @@ services:
       service: microservice-eureka-config
 
   loans2:
-    image: "andre21funcap/loans:s8"
+    image: "karma21/loans:s8"
     container_name: loans-ms2
     ports:
       - "8091:8090"
@@ -66,7 +66,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "andre21funcap/cards:s8"
+    image: "karma21/cards:s8"
     container_name: cards-ms
     ports:
       - "9000:9000"

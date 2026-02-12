@@ -1,6 +1,6 @@
 services:
   accounts:
-    image: "andre21funcap/accounts:s6"
+    image: "karma21/accounts:s6"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -12,7 +12,7 @@ services:
       - eazyBank
 
   loans:
-    image: "andre21funcap/loans:s6"
+    image: "karma21/loans:s6"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -24,7 +24,7 @@ services:
       - eazyBank
 
   cards:
-    image: "andre21funcap/cards:s6"
+    image: "karma21/cards:s6"
     container_name: cards-ms
     ports:
       - "9000:9000"
